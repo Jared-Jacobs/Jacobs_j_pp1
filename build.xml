@@ -1,5 +1,5 @@
 <?xml version = "1.0"?>
-<project name= "REGEX" default="usage" basedir="">
+<project name= "REGEX" default="usage" basedir=".">
 	
 	<target name="usage">
 
@@ -9,21 +9,31 @@
 		<echo>Run: This ant script runs the java files.</echo> 
 	</target>
 	
+
+	<target name="clean">
+		<echo>Deleting build files.</echo>
+
+		<delete>
+		<fileset dir="." includes="**/*.class"/> 
+		</delete>
+
+	</target>
+
+	<target name="build">
+		<echo>Compiling the java class files.</echo>
+
+		<javac includeantruntime="false" srcdir="."  destdir="." />	
+ 
+	</target>
+
 	<target name="run">
 		<echo>Running the .java files</echo>
 		
 		<java classname="Application">	
 			<arg value="auth.log" />
-			<arg value="" />
+			<arg value="0" />
 		</java>
 
 	</target>
-
-	<target name="build">
-		<echo>Compiling the .java source files</echo>
-		<javac includeantruntime="false" srcdir="." destdir="." />
-	</target>
-
-	
 
 </project>
