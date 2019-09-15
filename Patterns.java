@@ -25,12 +25,12 @@ public class Patterns
 		 UserMap = new HashMap<>();
 	}
 
-
+	//Returns IpMap when called
 	public HashMap<String, Integer> getIpMap()
 	{
 		return IpMap;
 	}
-
+	//Returns UserMap when called.
 	public HashMap<String, Integer> getUserMap()
 	{
 		return UserMap;
