@@ -29,6 +29,11 @@
 	<target name="run">
 		<echo>Running the .java files</echo>
 		
+	<echo>FLAG MUST BE MANUALLY CHANGED:
+	0- Prints default counts for lines, IP addresses and Usernames
+	1- Prints Ip Addresses and Frequency
+	2- Prints Usernames and Frequency
+	Nothing- Prints what 0 prints</echo>
 		<java classname="Application">
 			<arg value="auth.log" />
 			<arg value="2" />
