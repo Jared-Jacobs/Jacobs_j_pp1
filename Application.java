@@ -15,7 +15,6 @@ public class Application{
 	public static void main(String[] args){
 
 		int totalLines = 0;
-
 		Patterns patterns = new Patterns();
 
 		try
@@ -46,11 +45,5 @@ public class Application{
 		System.out.println(totalLines + " total lines were parsed.");
 		System.out.println("There are " + patterns.getIpMapSize() + " total Ip Addresses in the log.");
 		System.out.println("There are " + patterns.getUserMapSize() + " total Users in the log.");
-		//System.out.println(input);
-		//Matcher match = pattern.matcher(input);
-		//while(match.find()) {
-		//	System.out.println("IP: " +match.group());
-		//}
-
 	}
 }
