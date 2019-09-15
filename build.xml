@@ -21,7 +21,7 @@
 
 	<target name="build">
 		<echo>Compiling the java class files.</echo>
-
+		
 		<javac includeantruntime="false" srcdir="."  destdir="." />	
  
 	</target>
@@ -29,9 +29,9 @@
 	<target name="run">
 		<echo>Running the .java files</echo>
 		
-		<java classname="Application">	
+		<java classname="Application">
 			<arg value="auth.log" />
-			<arg value="0" />
+			<arg value="2" />
 		</java>
 
 	</target>
